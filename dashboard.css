@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: BLACK;
+    background-color: #f4f4f9;
+}
+
+  h1, h2, h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+.content {
+ margin-top:40px;
+  width: 100%;
+  padding: 0;
+  height:100%;
+  margin: 0;
+  bottom:50px;
+}
+iframe {
+  width: 100%;
+  position:fixed;
+  height:100%;
+  border: none;
+  right:0;
+  border:1px 0 1px 0;
+  border-color: #FAF9F6;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ecf4eb;
+    height:60px;
+    border:1px #33333320 solid;
+    box-shadow: 0spx 0 1px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+}
+
+.logo {
+    height:30px;
+    align-items: center;
+    margin-bottom:60px;
+}
+
+.logo img {
+    width:110px;
+    position:absolute;
+    height: 80px;
+    top:3px;
+    margin-right: 5px;
+    margin-left:20px;
+    
+}
+
+.menu-button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.profile {
+    cursor: pointer;
+    padding-right:10px;
+}
+
+.profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+}
+#usernameDisplay{
+    font-size:1.1em;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 5px;
+    width:10.5%;
+    height:23%;
+    text-align:center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.popup a {
+ 
+    display: block;
+    padding: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+.popup a:hover {
+    background-color: #f4f4f4;
+}
+
+.sidebar a {
+    margin-left:40px;
+    justify-content: space-between;
+    color: #1f7307;
+    font-weight: bold;
+    font-size:1.1rem;
+    text-decoration: none;
+ 
+}
+
+.sidebar a:hover {
+    color:#092302;
+}
+
+
+.form-container {
+display: flex;
+flex-direction: column;
+margin: auto;
+padding: 20px;
+border-radius: 8px;
+}
+.form-container input {
+margin: 10px 0;
+padding: 10px;
+width: 90%;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 14px;
+}
+
+.form-container button {
+padding: 10px;
+background-color: #0078d7;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+width: 95%;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+}
+
+.form-container button:hover {
+background-color: #005bb5;
+}
+
+.logo:hover {
+   
+    cursor: pointer;
+}

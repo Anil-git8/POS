@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="employee.css">
+</head>
+<body>
+
+<header>
+    <h1 style="margin-left:50px;">Employee Attendance</h1>
+</header>
+
+<div class="container">
+    <h2>Attendance Records</h2>
+    <div class="search-container">
+        <span class="search-icon" onclick="toggleSearchBar()"><i class="bi bi-search"></i></span>
+        <input type="text" id="searchBar" placeholder="Search" onkeyup="searchTable()">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Attendance Status</th>
+                <th>Shift</th>
+                <th>Last Updated</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="attendance-table-body">
+            <!-- Attendance records will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <button class="btn btn-primary" onclick="showAttendancePopup()">Add Attendance</button>
+    <div class="navigation-buttons">
+        <button class="btn btn-primary" onclick="window.location.href='employee.html'">Go to Employee Page</button>
+        <!-- <button class="btn btn-primary" onclick="window.location.href='roles.html'">Go to Roles Page</button> -->
+    </div>
+</div>
+
+<div class="popup-overlay" id="popup-overlay"></div>
+<div class="popup" id="attendance-popup">
+    <h3>Add Attendance Record</h3>
+    <form id="attendance-form">
+        <label for="employee-name">Employee Name:</label><br>
+        <input type="text" id="employee-name" placeholder="Enter Employee Name"><br><br>
+        <label for="attendance-status">Attendance Status:</label><br>
+        <select id="attendance-status" required>
+            <option value="None">--</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select><br><br>
+        <label for="shift">Shift:</label><br>
+        <input type="text" id="shift" required><br><br>
+        <button type="button" class="btn btn-primary" onclick="addAttendance()">Add</button>
+        <button type="button" class="btn btn-danger" onclick="closePopup()">Cancel</button>
+    </form>
+</div>
+
+<script src="attendence.js"></script>
+</body>
+</html>

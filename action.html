@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style1.css">
+
+    <style>
+        
+        .container {
+            background: #ffffff;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn1 {
+            width: 40%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #1e96ff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+
+        .btn1:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="actionContainer">
+        <div class="form-group phone-group">
+            <label for="phone"><h3>Phone Number</h3></label>
+            <div class="phone-wrapper">
+                <select id="country-code">
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                    <option value="+91">+91</option>
+                    <option value="+81">+81</option>
+                    <option value="+61">+61</option>
+                </select>
+                <input type="tel" id="phone" placeholder="Enter phone number" maxlength="10" />
+            </div>
+
+        
+        <button class="btn1" id="skip" onclick="window.location.href='product.html'">Skip</button>
+        <button class="btn1" onclick="window.location.href='product.html'">Submit</button>
+    </div>
+<script src="script1.js"></script>
+</body>
+</html>

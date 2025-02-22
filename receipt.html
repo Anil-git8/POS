@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice</title>
+  <link rel="stylesheet" href="receipt.css">
+</head>
+<body>
+  <div class="invoice-container">
+    <div class="header">
+      <h1>Invoice</h1>
+      <div class="store-info">
+        <h2>Example Store</h2>
+        <p>123 Main Street, City, Country</p>
+        <div class="details1">
+          <div>
+            <p><strong>Date:</strong> <span id="date"></span></p>
+            <p><strong>Time:</strong> <span id="time"></span></p>
+            <p><strong>Invoice Number:</strong> <span id="invoiceNumber"></span></p>
+            <p><strong>Payment Method:</strong> <span id="paymentMethod"></span></p>
+          </div>
+          
+        </div>
+    
+
+    <table class="details">
+      <thead>
+        <tr>
+          <th>SL.No</th>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Base Price (₹)</th>
+          <th>Discount (₹)</th>
+          <th>GST (₹)</th>
+          <th>Final Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody id="invoiceDetails"></tbody>
+    </table>
+
+    <div class="summary">
+      <p><strong>Total Base Price:</strong> ₹<span id="totalBasePrice"></span></p>
+      <p><strong>Total Discount:</strong> ₹<span id="totalDiscount"></span></p>
+      <p><strong>Total(CGST + SGST):</strong> ₹<span id="totalTax"></span></p>
+      <p><strong>Grand Total:</strong> ₹<span id="grandTotal"></span></p>
+    </div>
+
+    <button onclick="window.print()">Print Invoice</button>
+  </div>
+
+  <div class="footer">
+    <p>Thank you for shopping with us!</p>
+  </div>
+
+  <script src="receipt.js">
+  </script>
+</body>
+</html>

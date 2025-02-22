@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e4f6e5;
+}
+h1, h2, h3 {
+  font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+.invoice-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1, .store-info {
+  text-align: center;
+} 
+.details1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: justify;
+}
+.details1 div {
+  line-height: 1.6;
+}
+
+.header p {
+  margin: 5px 0;
+}
+
+.details, .summary {
+  margin-bottom: 20px;
+}
+
+.details th, .details td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.details {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.summary p {
+  text-align: right;
+  font-size: 1.2rem;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.invoice-container{
+  opacity: 0;
+    transform: translateY();
+    animation: fadeIn 1s forwards;
+}
+
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

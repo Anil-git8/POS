@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminregister</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="container" id="registerContainer">
+    <h2>Employee details</h2>
+<div class="form-row">
+    <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" placeholder="Enter First Name">
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Enter Last Name">
+    </div>
+</div>
+
+<div class="form-row">
+    <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" placeholder="Enter Phone Number">
+    </div>
+</div>
+
+<div class="form-row">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email">
+    </div>
+
+    <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter Location">
+    </div>
+</div>
+
+<div class="form-row">
+    <div class="form-group">
+        <label for="branchCode">Branch Code:</label>
+        <input type="text" id="branchCode" placeholder="Enter Branch Code">
+    </div>
+</div>
+
+    <button class="btn" onclick="submitRegister()">Submit</button>
+</div>
+
+<div class="popup" id="popup"></div>
+
+<script src="script1.js"></script>
+</body>
+</html>

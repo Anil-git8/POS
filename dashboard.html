@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" type="image/x-icon" href="superlogo.png">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+           <img class="logo" src="superlogo.png" alt="Logo" onclick="goToDashboard()">
+            <!-- <button class="menu-button" onclick="toggleSidebar()">&#9776;</button> -->
+        </div>
+        
+        <div class="sidebar" id="sidebar">
+            <a href="#" onclick="dashContent()">Dashboard</a>
+            <a href="#" onclick="inventContent()">Inventory</a>
+            <a href="#" onclick="empContent()">Employee</a>
+            <!-- <a href="#" onclick="stoContent('orders')">Store</a>
+            <a href="#" onclick="cusContent('customer')">Customer</a> -->
+        </div>
+
+
+
+        <div class="profile" onclick="togglePopup()">
+            <span id="usernameDisplay" style="top:30px;right:80px;position:absolute; font-weight:bold; color:#020202">employee</span>
+            <img src="profile.png" alt="Profile Picture">
+            <div class="popup" id="profilePopup">
+                <a href="#" onclick="showContent()">View Profile</a>
+                <a href="#" onclick="forgetContent()">Change Password</a>
+                <a href="#" onclick="logout()">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- <div id="content" class="content">
+        <h1>Welcome to the Dashboard</h1>
+        <p>Select a menu item to view its content.</p>
+    </div> -->
+    
+   
+<div class="content">
+    <iframe  id="dash" src="sales.html"></iframe>
+    <iframe style="display:none" id="profileedit" src="editadmin.html"></iframe>
+    <iframe style="display:none" id="forget" src="forgot.html"></iframe>
+    <iframe style="display:none" id="emp" src="employee.html"></iframe>
+    <iframe style="display:none" id="invent" src="inventory.html"></iframe>
+  </div>
+
+    <!-- <div id="content1" class="content1" >
+    </div> -->
+
+    <script src="dashboard.js">
+      
+
+    </script>
+</body>
+</html>
